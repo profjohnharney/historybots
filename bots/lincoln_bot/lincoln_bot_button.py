@@ -15,7 +15,7 @@ myCmd1 = 'omxplayer -o alsa lincoln.mp3'
 myCmd2 = 'omxplayer -o alsa lincoln2.mp3'
 myCmd3 = 'omxplayer -o alsa lincoln3.mp3'
 myCmd4 = 'omxplayer -o alsa lincoln4.mp3'
-myCmd5 = 'espeak "John Todd Stuart lent me books"'
+myCmd5 = 'espeak --stdout "John Todd Stuart lent me books" | aplay' # changed to get espeak to work again
 myList = [myCmd1, myCmd2, myCmd3, myCmd4, myCmd5]
 
 GPIO.setup(pir_sensor, GPIO.IN, GPIO.PUD_DOWN)
