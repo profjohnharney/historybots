@@ -73,8 +73,8 @@ def quotes():
         os.system(random.choice(List)) # play sound file
         return
 
-p1 = multiprocessing.Process(target=servo_control())
-p2 = multiprocessing.Process(target=quotes())
+p1 = multiprocessing.Process(target=servo_control)
+p2 = multiprocessing.Process(target=quotes)
 
 
 while True:
