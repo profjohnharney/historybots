@@ -43,6 +43,9 @@ for file in l_dirlist:
     if file[-4:] == ".wav"
     l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
 
+print(l_audiofiles) # check to see if it worked
+
+
 
 i_count = 0 # set up for correct grammar in notification below
 
