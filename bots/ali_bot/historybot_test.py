@@ -40,7 +40,7 @@ l_dirlist = os.listdir()
 l_audiofiles = []
 
 for file in l_dirlist:
-    if file[-4:] == ".wav"
+    if file[-4:] == ".wav":
     l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
 
 print(l_audiofiles) # check to see if it worked
