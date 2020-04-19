@@ -40,10 +40,13 @@ l_dirlist = os.listdir()
 l_audiofiles = []
 
 for file in l_dirlist:
-    if file[-4:] == ".wav"
-    l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
-
+    if file[-4:] == ".mp3":
+        #l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
+        #l_audiofiles.append("'mpg123 "  + file + "'")
+        l_audiofiles.append("mpg123 "  + file)
 print(l_audiofiles) # check to see if it worked
+
+os.system(random.choice(l_audiofiles))
 
 
 
