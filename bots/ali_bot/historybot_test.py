@@ -36,6 +36,7 @@ import random
 # myCmd6 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali6.mp3'
 # myList = [myCmd1, myCmd2, myCmd3, myCmd4, myCmd5, myCmd6]
 
+# the block below WORKS!!! WOOOOT. I say. I say, WOOOOOOTTTTTT.
 l_dirlist = os.listdir()
 l_audiofiles = []
 
