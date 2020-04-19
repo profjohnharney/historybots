@@ -28,13 +28,21 @@ GPIO.setup(button_led,GPIO.OUT) #sets up pin 26 to output
 # idea is to replace following code so that minimal changes are needed per bot
 # will use os.listdir() to get started
 
-myCmd1 = 'omxplayer --vol 602 -o alsa /home/pi/historybots/sports/ali_bot/ali1.mp3' # this clip was too low, changed volume
-myCmd2 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali2.mp3' # These examples are from the "Ali bot"
-myCmd3 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali3.mp3' # change
-myCmd4 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali4.mp3' # as
-myCmd5 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali5.mp3' # needed
-myCmd6 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali6.mp3'
-myList = [myCmd1, myCmd2, myCmd3, myCmd4, myCmd5, myCmd6]
+# myCmd1 = 'omxplayer --vol 602 -o alsa /home/pi/historybots/sports/ali_bot/ali1.mp3' # this clip was too low, changed volume
+# myCmd2 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali2.mp3' # These examples are from the "Ali bot"
+# myCmd3 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali3.mp3' # change
+# myCmd4 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali4.mp3' # as
+# myCmd5 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali5.mp3' # needed
+# myCmd6 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali6.mp3'
+# myList = [myCmd1, myCmd2, myCmd3, myCmd4, myCmd5, myCmd6]
+
+l_dirlist = os.listdir()
+l_audiofiles = []
+
+for file in l_dirlist:
+    if file[-4:] == ".wav"
+    l_audiofiles.append(file)
+
 
 i_count = 0 # set up for correct grammar in notification below
 
@@ -45,7 +53,8 @@ while True:
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
             GPIO.output(led,True) #Turn on LED
-            os.system(random.choice(myList)) # play sound file
+            #os.system(random.choice(myList)) # play sound file
+            os.system(random.choice(l_audiofiles))
             GPIO.output(led,False) #turn off LED
             if i_count == 1:
                 print("History Bot has been activated " + str(i_count) + " time!")
