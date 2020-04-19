@@ -41,7 +41,7 @@ l_audiofiles = []
 
 for file in l_dirlist:
     if file[-4:] == ".wav"
-    l_audiofiles.append('omxplayer -o alsa ' + file)
+    l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
 
 
 i_count = 0 # set up for correct grammar in notification below
