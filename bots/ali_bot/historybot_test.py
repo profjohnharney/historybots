@@ -45,6 +45,8 @@ for file in l_dirlist:
 
 print(l_audiofiles) # check to see if it worked
 
+os.system(random.choice(l_audiofiles))
+
 
 
 # i_count = 0 # set up for correct grammar in notification below
