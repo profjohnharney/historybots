@@ -14,7 +14,7 @@ import time
 import os
 import random
 
-GPIO.setmode(GPIO.BCM) #use the GPIO numbering
+GPIO.setmode(GPIO.BCM) # use the GPIO numbering
 GPIO.setwarnings(False) # Avoids warning channel is already in use
 
 led = 21 # GPIO pin 21
@@ -25,32 +25,26 @@ GPIO.setup(led,GPIO.OUT) # sets up pin 21 to output
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) #sets up pin 18 as a button
 GPIO.setup(button_led,GPIO.OUT) #sets up pin 26 to output
 
-# idea is to replace following code so that minimal changes are needed per bot
-# will use os.listdir() to get started
-
-# myCmd1 = 'omxplayer --vol 602 -o alsa /home/pi/historybots/sports/ali_bot/ali1.mp3' # this clip was too low, changed volume
-# myCmd2 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali2.mp3' # These examples are from the "Ali bot"
-# myCmd3 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali3.mp3' # change
-# myCmd4 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali4.mp3' # as
-# myCmd5 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali5.mp3' # needed
-# myCmd6 = 'omxplayer -o alsa /home/pi/historybots/sports/ali_bot/ali6.mp3'
-# myList = [myCmd1, myCmd2, myCmd3, myCmd4, myCmd5, myCmd6]
+# maybe change the next few lines to a function, not sure
 
 l_dirlist = os.listdir()
 l_audiofiles = []
+
+# following code works only with mp3s and if you are using mpg123;
+# I need to check if this solution works on RPi, and it would be nice
+# to support mp3s and wav files
 
 for file in l_dirlist:
     if file[-4:] == ".mp3":
         #l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
         #l_audiofiles.append("'mpg123 "  + file + "'")
         l_audiofiles.append("mpg123 "  + file)
-print(l_audiofiles) # check to see if it worked
+# os.system(random.choice(l_audiofiles))
 
-os.system(random.choice(l_audiofiles))
+# this counter is used to make sure the notification uses correct grammar
+i_count = 0
 
-
-
-i_count = 0 # set up for correct grammar in notification below
+# following code is where the magic happens
 
 while True:
         GPIO.output(button_led, True) # turn on button led
