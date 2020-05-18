@@ -1,4 +1,4 @@
-# John Harney, Centre College, updated 10.21.19
+# John Harney, Centre College, updated 05.18.20
 
 # this code exists thanks to Texas-Mark on the official RPi forums,
 # he shared the code the original (PIR sensor) iteration of this was based on at
@@ -7,7 +7,6 @@
 # button code version relied heavily on Soren at
 # https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/
 
-# this is the base code for all history bots as of 10.21.19
 
 import RPi.GPIO as GPIO
 import time
