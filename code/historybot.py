@@ -1,63 +1,56 @@
 # John Harney, Centre College, updated 05.18.20
 
-# this code exists thanks to Texas-Mark on the official RPi forums,
-# he shared the code the original (PIR sensor) iteration of this was based on at
-# https://www.raspberrypi.org/forums/viewtopic.php?t=176241
-
-# button code version relied heavily on Soren at
-# https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/
-
+# writing of the button code relied on:
+# Texas-Mark on the official RPi forums: https://www.raspberrypi.org/forums/viewtopic.php?t=176241
+# and
+# Soren at https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/
 
 import RPi.GPIO as GPIO
-import time
-import os
+import time # for sleep function below
+import os # for commands via console
 import random
 
-GPIO.setmode(GPIO.BCM) # use the GPIO numbering
+GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) # Avoids warning channel is already in use
 
-led = 21 # GPIO pin 21
-button = 18 # GPIO pin 18
-button_led = 26 # GPIO pin 26
+led = 21
+button = 18
+button_led = 26
 
-GPIO.setup(led,GPIO.OUT) # sets up pin 21 to output
+GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) #sets up pin 18 as a button
-GPIO.setup(button_led,GPIO.OUT) #sets up pin 26 to output
+GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
 
 # maybe change the next few lines to a function, not sure
 
 l_dirlist = os.listdir()
 l_audiofiles = []
 
-# following code works only with mp3s and if you are using mpg123;
-# I need to check if this solution works on RPi, and it would be nice
-# to support mp3s and wav files
+# following code SHOULD work with either mp3 or wav; needs testing
+
+# code takes all mp3 and wav files in the SAME directory as the script
+# and queues them up for the random function below
 
 for file in l_dirlist:
-    if file[-4:] == ".mp3":
-        #l_audiofiles.append("'omxplayer -o alsa "  + file + "'")
-        #l_audiofiles.append("'mpg123 "  + file + "'")
-        l_audiofiles.append("mpg123 "  + file)
-# os.system(random.choice(l_audiofiles))
+    if file[-4:] == ".mp3" or file[-4:] == ".wav":
+        l_audiofiles.append("omxplayer -o alsa "  + file)
 
-# this counter is used to make sure the notification uses correct grammar
-i_count = 0
+i_count = 0 # this counter is used so notification uses correct grammar
 
 # following code is where the magic happens
 
-while True:
+while True: # sets this code on a loop
         GPIO.output(button_led, True) # turn on button led
         input_state = GPIO.input(button) # primes the button!
-        if input_state == False:
+        if input_state == False: # False == button press
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
             GPIO.output(led,True) #Turn on LED
-            #os.system(random.choice(myList)) # play sound file
-            os.system(random.choice(l_audiofiles))
+            os.system(random.choice(l_audiofiles)) # takes random file from list and plays through command line
             GPIO.output(led,False) #turn off LED
             if i_count == 1:
-                print("History Bot has been activated " + str(i_count) + " time!")
+                print("History Bot has been activated!")
             else:
                 print("History Bot has been activated " + str(i_count) + " times!")
             GPIO.output(button_led, True) # turns button led back on
-            time.sleep(0.2)
+            time.sleep(0.2) # brief delay to keep the loop working
