@@ -32,8 +32,6 @@ GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
 l_dirlist = os.listdir()
 l_textfiles = []
 
-# following code SHOULD work with either mp3 or wav; needs testing
-
 # code takes text files in the SAME directory as the script
 # and plays the audio through the USB speaker
 # USB audio on RPi can be finicky; if you are having trouble consult
