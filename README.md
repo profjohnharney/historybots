@@ -11,7 +11,7 @@ More information on the History Bot 1.0, including a recap of my own experiences
 I have endeavoured to be clear in laying out the basic steps involved in creating a History Bot, but independent research is often inevitable.
 If you succeed in creating this History Bot you will learn plenty along the way, and will have the tool to start making your own projects if you choose.
 
-I hope this was helpful! Comments are welcome. 
+I hope this was helpful! Comments are welcome. You can read more about me here and you can contact me on twitter at @profjohnharney.
 
 ## Some brief information
 
@@ -31,8 +31,9 @@ I hope this was helpful! Comments are welcome.
 - to give students experience and practice in working with others in a small group
 
 ### I have no experience in coding, can I do this?
-The short answer is YES, though you want to give yourself some lead time to work through some basic programming ideas and hardware scenarios.
+YES, though you want to give yourself some lead time to work through some basic programming ideas and hardware scenarios.
 If you have never done anything like this before, be prepared for what seem like minor tasks sometimes taking a while to complete, especially if you are teaching or working on other projects.
+
 However, the feeling you get when you solve a problem, or learn a new skill?
 I have rarely had so much fun doing my job.
 And I love my job.
