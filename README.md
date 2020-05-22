@@ -4,18 +4,38 @@
 A history bot is a device that responds to user interaction with a visual, mechanical or aural response.
 The history bot 1.0 is built using a Raspberry Pi 3B+.
 
+This project is offered as a suggestion to fellow educators who are interested in bringing a project like this into the classroom.
+I work as an historian looking to bring technological skills and interactions with technology into the classroom. 
+More information on the History Bot 1.0, including a recap of my own experiences teaching a class using this project, can be found in Documentation.
 
-"History Bots" is an upper division History class offered at Centre College during Centre Term, an intensive sixteen day term offered in January between long terms. 
-The class will be taught for the first time in January 2020.
+I have endeavoured to be clear in laying out the basic steps involved in creating a History Bot, but independent research is often inevitable.
+If you succeed in creating this History Bot you will learn plenty along the way, and will have the tool to start making your own projects if you choose.
 
-I have taught CentreTerm classes focused on student group work, including production of video games and podcast episodes. 
-You can learn more about me [here](https://profjohnharney.com/about-2/).
+I hope this was helpful! Comments are welcome. 
 
-If you are a Centre student, feel free to come and see me in Crounse 424 or [email](mailto:john.harney@centre.edu) me.
+## Some brief information
+
+### What you need to make the History Bot
+- a Raspberry Pi (I have used a Zero and a 3B+)
+- a power supply
+- an SD card (8GB is more than enough, and you can redeploy for other projects)
+- an interactive button
+- an led
+- some kind of housing for the bot; this project used a 3D printer to fabricate IBM's TJ Bot design
+
+### My goals in teaching the History Bot
+- to introduce students to practical use of coding, without the need for prior experience
+- to encourage students to be creative in their research of and presentation of historical topics
+- to give students experience and practice in working with others in a small group
+
+### I have no experience in coding, can I do this?
+The short answer is YES, though you want to give yourself some lead time to work through some basic programming ideas and hardware scenarios.
+If you have never done anything like this before, be prepared for what seem like minor tasks sometimes taking a while to complete, especially if you are teaching or working on other projects.
+However, the feeling you get when you solve a problem, or learn a new skill?
+I have rarely had so much fun doing my job.
 
 **You do not need to know _anything_ about coding or computer science to take this class, do well, and have fun!**
 
-## What will we do in this class?
 
 Students will organize into small groups to create a robot version - or robot adequate representation - of a historical figure that will be able to carry on a conversation with someone who played no role in building it. 
 All groups will likely have technology in common, running their history bot off a raspberry pi and using a microphone and speaker to communicate. 
