@@ -20,7 +20,9 @@ I hope this was helpful! Comments are welcome.
 - a power supply
 - an SD card (8GB is more than enough, and you can redeploy for other projects)
 - an interactive button
-- an led
+- a speaker (this project uses a USB speaker)
+- an led and an appropriate resistor
+- connectors, such as jumper wires
 - some kind of housing for the bot; this project used a 3D printer to fabricate IBM's TJ Bot design
 
 ### My goals in teaching the History Bot
