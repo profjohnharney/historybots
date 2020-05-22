@@ -26,9 +26,9 @@ I hope this is helpful! Comments are welcome. You can read more about me [here](
 - some kind of housing for the bot; this project used a 3D printer to fabricate IBM's TJ Bot design
 
 ### My goals in teaching the History Bot
-- to introduce students to practical use of coding, without the need for prior experience
 - to encourage students to be creative in their research of and presentation of historical topics
 - to give students experience and practice in working with others in a small group
+- to introduce students to practical use of coding, without the need for prior experience
 
 ### I have no experience in coding, can I do this?
 YES, though you want to give yourself some lead time to work through some basic programming ideas and hardware scenarios.
