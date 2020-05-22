@@ -23,7 +23,7 @@ I hope this is helpful! Comments are welcome. You can read more about me [here](
 - a speaker (this project uses a USB speaker)
 - an led and an appropriate resistor
 - connectors, such as jumper wires
-- some kind of housing for the bot; this project used a 3D printer to fabricate IBM's TJ Bot design
+- some kind of housing for the bot; this project used a 3D printer to fabricate IBM's [TJ Bot](https://ibmtjbot.github.io/) design
 
 ### My goals in teaching the History Bot
 - to encourage students to be creative in their research of and presentation of historical topics
