@@ -9,9 +9,9 @@ I work as an historian looking to bring technological skills and interactions wi
 More information on the History Bot 1.0, including a recap of my own experiences teaching a class using this project, can be found in Documentation.
 
 I have endeavoured to be clear in laying out the basic steps involved in creating a History Bot, but independent research is often inevitable.
-If you succeed in creating this History Bot you will learn plenty along the way, and will have the tool to start making your own projects if you choose.
+If you succeed in creating this History Bot you will learn plenty along the way, and will have the tools to start making your own projects if you choose.
 
-I hope this was helpful! Comments are welcome. You can read more about me [here](http://www.profjohnharney.com) and you can contact me on twitter at [@profjohnharney](http://www.twitter.com/profjohnharney).
+I hope this is helpful! Comments are welcome. You can read more about me [here](http://www.profjohnharney.com) and you can contact me on twitter at [@profjohnharney](http://www.twitter.com/profjohnharney).
 
 ## Some brief information
 
