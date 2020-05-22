@@ -11,7 +11,7 @@ More information on the History Bot 1.0, including a recap of my own experiences
 I have endeavoured to be clear in laying out the basic steps involved in creating a History Bot, but independent research is often inevitable.
 If you succeed in creating this History Bot you will learn plenty along the way, and will have the tool to start making your own projects if you choose.
 
-I hope this was helpful! Comments are welcome. You can read more about me here and you can contact me on twitter at @profjohnharney.
+I hope this was helpful! Comments are welcome. You can read more about me [here](http://www.profjohnharney.com) and you can contact me on twitter at [@profjohnharney](http://www.twitter.com/profjohnharney).
 
 ## Some brief information
 
