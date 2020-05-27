@@ -18,7 +18,7 @@ Default username for every RPi is "pi", and the default password is "raspberry".
 
 Beyond that, everything should be fairly straightforward. There is a good setup guide [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up).
 
-## USB audio fix if needed
+## USB audio fix (if needed)
 
 You may have issues getting your RPi to play audio through the USB speaker. If this is the case, I strongly recommend the advice [here](https://www.raspberrypi-spy.co.uk/2019/06/using-a-usb-audio-device-with-the-raspberry-pi/), particularly under "Set USB Audio as Default Audio Device." 
 
