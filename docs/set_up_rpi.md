@@ -10,7 +10,7 @@ I recommend shopping at either [Sparkfun](https://www.sparkfun.com/) or [Adafrui
 There are three main tasks here:
 - download an operating system; I recommend [Raspbian Buster with Desktop](https://www.raspberrypi.org/downloads/raspbian/)
 - flash the operating system to your SD card; I recommend [Balena Etcher](https://www.balena.io/etcher/)
-- hook your RPi up to a monitor and keyboard, and plug it in!
+- hook your RPi up to a monitor and keyboard, and plug it in! (I would also go ahead and plug in the USB speaker)
 
 ## Initial setup
 
