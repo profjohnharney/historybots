@@ -29,9 +29,9 @@ You may have issues getting your RPi to play audio through the USB speaker. If t
 You need [espeak](http://espeak.sourceforge.net/) for any History Bot using text files rather than audio files.
 
 1. Open your terminal on your Raspberry Pi either by selecting it from the menu or pressing CTRL+ALT+T.
-2. Type 'sudo apt-get install espeak'; you may be asked to press Y to confirm installation
-3. Now that espeak is installed, it should theoretically work with the syntax 'espeak "hello world"'; this might not be the case on your RPi. 
-Do not fret, you just need to use a different command: 'espeak --stdout "hello world" | aplay'. This should work just fine.
+2. Type ```sudo apt-get install espeak```; you may be asked to press Y to confirm installation
+3. Now that espeak is installed, it should theoretically work with the syntax ```espeak "hello world"```; this might not be the case on your RPi. 
+Do not fret, you just need to use a different command: ```espeak --stdout "hello world" | aplay```. This should work just fine.
 
 ### SSH (Secure Shell)
 
