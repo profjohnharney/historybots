@@ -1,11 +1,13 @@
 # History Bot 1.0 Shopping List
 
+You have many options when it comes to buying these components. I recommend [Sparkfun](https://www.sparkfun.com) and [Adafruit](https://www.adafruit.com). Links below are to Adafruit listings.
+
 ## List with prices
 
 | Item             | Price     |
 |------------------|-----------|
-| Raspberry Pi     |
-| Power supply     |
+| [Raspberry Pi](https://www.adafruit.com/product/3775)     | $35
+| [Power supply](https://www.adafruit.com/product/1995)     |
 | SD card          |
 | USB speaker      |
 | arcade button    |
