@@ -9,6 +9,9 @@ With connectors, leds and resistors you will find you are ordering more than you
 But you will always want plenty of those things and spares are extremely useful. 
 It may also prove to be the basis of a little Dig Hum hardware lab!
 
+Linking up the arcade button using jumper wires and alligator clips is pretty awkward, but it will work. 
+You might want to consider investing in a soldering iron setup - and investing the time required to learn to solder - if you are thinking of taking this work further and creating more durable projects.
+
 ## List with prices
 
 | Item             | Price     |
