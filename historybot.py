@@ -21,12 +21,9 @@ GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) # sets up pin 18 as a button
 GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
 
-# maybe change the next few lines to a function, not sure
-
-l_dirlist = os.listdir()
+path = "./" # this is being added so that the script works in Python 2.7
+l_dirlist = os.listdir(path) # Python 2.7 requires an argument; optional in Python 3
 l_audiofiles = []
-
-# following code SHOULD work with either mp3 or wav; needs testing
 
 # code takes all mp3 and wav files in the SAME directory as the script
 # and queues them up for the random function below
