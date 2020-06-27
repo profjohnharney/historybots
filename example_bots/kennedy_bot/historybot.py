@@ -1,15 +1,9 @@
-# John Harney, Centre College, updated 05.19.20
+# John Harney, Centre College, updated 05.18.20
 
 # writing of the button code relied on:
 # Texas-Mark on the official RPi forums: https://www.raspberrypi.org/forums/viewtopic.php?t=176241
 # and
 # Soren at https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/
-
-# this is the "Yeats_bot", a history bot based on William Butler Yeats
-# this is an example of how to write a bot using text-to-speech
-
-# this code is based on the idea you will place (theoretically short)
-# plaint text files in the same directory as the script
 
 import RPi.GPIO as GPIO
 import time # for sleep function below
@@ -29,16 +23,18 @@ GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
 
 # maybe change the next few lines to a function, not sure
 
-l_dirlist = os.listdir()
-l_textfiles = []
+path = "./" # this is being added so that the script works in Python 2.7
+l_dirlist = os.listdir(path) # Python 2.7 requires an argument; optional in Python 3
+l_audiofiles = []
 
-# code takes text files in the SAME directory as the script
-# and plays the audio through the USB speaker
-# USB audio on RPi can be finicky; if you are having trouble consult
-# https://www.raspberrypi-spy.co.uk/2019/06/using-a-usb-audio-device-with-the-raspberry-pi/
+# following code SHOULD work with either mp3 or wav; needs testing
+
+# code takes all mp3 and wav files in the SAME directory as the script
+# and queues them up for the random function below
 
 for file in l_dirlist:
-        l_textfiles.append("espeak --stdout -f" + file + " | aplay") # the stdout command and pipe to aplay may be overkill, depending on how usb speaker is doing
+    if file[-4:] == ".mp3" or file[-4:] == ".wav":
+        l_audiofiles.append("omxplayer -o alsa "  + file)
 
 i_count = 0 # this counter is used so notification uses correct grammar
 
@@ -51,7 +47,7 @@ while True: # sets this code on a loop
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
             GPIO.output(led,True) #Turn on LED
-            os.system(random.choice(l_textfiles)) # takes random file from list and plays through command line
+            os.system(random.choice(l_audiofiles)) # takes random file from list and plays through command line
             GPIO.output(led,False) #turn off LED
             if i_count == 1:
                 print("History Bot has been activated!")
