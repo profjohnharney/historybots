@@ -18,9 +18,25 @@ Default username for every RPi is "pi", and the default password is "raspberry".
 
 Beyond that, everything should be fairly straightforward. There is a good setup guide [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up).
 
+## Using the Raspberry Pi (and the command line)
+
+Once you are all set up and logged in, you will be able to use the desktop environment. 
+Getting to know this environment is a good idea, and it is a straightforward transition from using a Windows PC or a Mac.
+
+At some point you will want to start getting to know the command line.
+You can open a terminal in Raspberry Pi OS by pressing `Ctrl+Alt+T`.
+If you run into issues and find yourself googling, you will be doing a lot of typing things into the command line.
+However, if all goes well your use of the command line will be limited to `python historybot.py`.
+
+My main advice to you, as someone whose main experience with the command line before starting this project was limited to using DOS in the 1980s, is to take simple steps. 
+Use the command line as needed and go from there. 
+There is a lot of depth to the command line, but this project only requires some fairly light usage of it.
+So do not be intimidated.
+
 ## USB audio fix (if needed)
 
-You may have issues getting your RPi to play audio through the USB speaker. If this is the case, I strongly recommend the advice [here](https://www.raspberrypi-spy.co.uk/2019/06/using-a-usb-audio-device-with-the-raspberry-pi/), particularly under "Set USB Audio as Default Audio Device." 
+You may have issues getting your RPi to play audio through the USB speaker. 
+If this is the case, I strongly recommend the advice [here](https://www.raspberrypi-spy.co.uk/2019/06/using-a-usb-audio-device-with-the-raspberry-pi/), particularly under "Set USB Audio as Default Audio Device." 
 
 ## Some extra steps
 
