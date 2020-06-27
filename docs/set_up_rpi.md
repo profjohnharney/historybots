@@ -8,9 +8,9 @@ I recommend shopping at either [Sparkfun](https://www.sparkfun.com/) or [Adafrui
 ## Get your Pi working as a computer!
 
 There are three main tasks here:
-- download an operating system; I recommend [Raspbian Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/)
-- flash the operating system to your SD card; I recommend using [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
-- hook your RPi up to a monitor and keyboard, and plug it in! (I would also go ahead and plug in the USB speaker)
+- download an operating system; I recommend [Raspbian Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/).
+- flash the operating system to your SD card; I recommend using [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
+- hook your RPi up to a monitor and keyboard, and plug it in! (I would also go ahead and plug in the USB speaker).
 
 ## Initial setup
 
