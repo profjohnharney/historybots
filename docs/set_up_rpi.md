@@ -24,7 +24,7 @@ Once you are all set up and logged in, you will be able to use the desktop envir
 Getting to know this environment is a good idea, and it is a straightforward transition from using a Windows PC or a Mac.
 It should look something like this:
 
-<img src = "https://en.wikipedia.org/wiki/Raspberry_Pi_OS#/media/File:Raspbian_2019.04_application_menu.jpg">
+<img src="https://en.wikipedia.org/wiki/Raspberry_Pi_OS#/media/File:Raspbian_2019.04_application_menu.jpg">
 
 At some point you will want to start getting to know the command line.
 You can open a terminal in Raspberry Pi OS by pressing `Ctrl+Alt+T`.
