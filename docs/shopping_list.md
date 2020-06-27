@@ -12,6 +12,10 @@ It may also prove to be the basis of a little Dig Hum hardware lab!
 Linking up the arcade button using jumper wires and alligator clips is pretty awkward, but it will work. 
 You might want to consider investing in a soldering iron setup - and investing the time required to learn to solder - if you are thinking of taking this work further and creating more durable projects.
 
+Finally, although you do not need tools for this project, you should give some thought to what a simple tool set would look like.
+You cannot go wrong with a pair of needle-nosed pliers and some electrical tape. 
+Check out [this kit on Sparkfun](https://www.sparkfun.com/products/14681) for more ideas. 
+
 ## List with prices
 
 | Item             | Price     |
