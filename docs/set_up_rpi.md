@@ -26,7 +26,7 @@ Getting to know this environment is a good idea, and it is a straightforward tra
 At some point you will want to start getting to know the command line.
 You can open a terminal in Raspberry Pi OS by pressing `Ctrl+Alt+T`.
 If you run into issues and find yourself googling, you will be doing a lot of typing things into the command line.
-However, if all goes well your use of the command line will be limited to `python historybot.py`.
+However, if all goes well your use of the command line will be limited to typing `python historybot.py`.
 
 My main advice to you, as someone whose main experience with the command line before starting this project was limited to using DOS in the 1980s, is to take simple steps. 
 Use the command line as needed and go from there. 
