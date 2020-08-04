@@ -47,6 +47,7 @@ for file in l_dirlist:
 i_count = 0 # this counter is used so notification uses correct grammar
 
 # following code is where the magic happens
+# I was able to get the non-repeat to work! Could easily fix so it does not say from the last two... in fact I will... this is all for 1.1
 
 while True: # sets this code on a loop
         GPIO.output(button_led, True) # turn on button led
@@ -57,7 +58,7 @@ while True: # sets this code on a loop
             GPIO.output(button_led, False) # turns off button led
             GPIO.output(led,True) #Turn on LED
             playfile = random.choice(l_audiofiles)
-            while playfile == playList[-1]:
+            while playfile == playList[-1] or playfile == playList[-2]:
                 playfile = random.choice(l_audiofiles)
             os.system(playfile)
             playList.append(playfile)
@@ -67,6 +68,6 @@ while True: # sets this code on a loop
                 print("History Bot has been activated!")
             else:
                 print("History Bot has been activated " + str(i_count) + " times!")
-            print("History Bot spake " + playList[-1])
+            print("History Bot spake " + playList[-1]) # test to monitor files played back
             GPIO.output(button_led, True) # turns button led back on
-           # time.sleep(0.2) # brief delay to keep the loop working
+           # time.sleep(0.2) # brief delay to keep the loop working - turns out I never needed this / will delete in 1.1
