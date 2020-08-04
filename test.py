@@ -1,7 +1,6 @@
 # John Harney, Centre College, updated 08.04.2020
-# THIS IS FOR HISTORY BOT 1.1, not 1.0
 
-# writing of the button code relied on:
+# initial writing of the button code relied on:
 # Texas-Mark on the official RPi forums: https://www.raspberrypi.org/forums/viewtopic.php?t=176241
 # and
 # Soren at https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/
@@ -21,13 +20,12 @@ GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) # sets up pin 18 as a button
 GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
 
-path = "./" # this is being added so that the script works in Python 2.7
-l_dirlist = os.listdir(path) # Python 2.7 requires an argument; argument is optional in Python 3
-l_audiofiles = []
-
 # code takes all mp3 and wav files in the SAME directory as the script
 # and queues them up for the random function below
 
+path = "./" # this is being added so that the script works in Python 2.7
+l_dirlist = os.listdir(path) # Python 2.7 requires an argument; argument is optional in Python 3
+l_audiofiles = []
 for file in l_dirlist:
     if file[-4:] == ".mp3" or file[-4:] == ".wav":
         l_audiofiles.append("omxplayer -o alsa "  + file)
