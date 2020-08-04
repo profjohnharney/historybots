@@ -51,7 +51,7 @@ i_count = 0 # this counter is used so notification uses correct grammar
 while True: # sets this code on a loop
         GPIO.output(button_led, True) # turn on button led
         input_state = GPIO.input(button) # primes the button!
-        playList = [] # gets the list ready to avoid repitition of tracks
+        playList = l_audiofiles # gets the list ready to avoid repitition of tracks
         if input_state == False: # False == button press
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
