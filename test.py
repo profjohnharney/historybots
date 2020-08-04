@@ -36,13 +36,13 @@ for file in l_dirlist:
 # this function ensures the same file is not played twice in a row 
 # this does not actually work.... rather than play the same sound twice it will just go back to wait to be activated, having done nothing
 
-def playFile():
-    playList = []
-    playfile = random.choice(l_audiofiles)
-    while playfile == playList[-1]:
-        playfile = random.choice(l_audiofiles)
-    os.system(playfile)
-    playList.append(playfile)
+# def playFile():
+#     playList = []
+#     playfile = random.choice(l_audiofiles)
+#     while playfile == playList[-1]:
+#         playfile = random.choice(l_audiofiles)
+#     os.system(playfile)
+#     playList.append(playfile)
     
 i_count = 0 # this counter is used so notification uses correct grammar
 
