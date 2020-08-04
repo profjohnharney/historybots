@@ -43,7 +43,7 @@ while True: # sets this code on a loop
             GPIO.output(button_led, False) # turns off button led
             GPIO.output(led,True) #Turn on LED
             playfile = random.choice(l_audiofiles) # selects an audio file from the directory
-            while playfile == playList[-1] or playfile == playList[-2]: # checks to make sure file was not one of last two played
+            while playfile == playList[-1]: # checks to make sure file was not last one played
                 playfile = random.choice(l_audiofiles)
             os.system(playfile) # plays file via command line
             playList.append(playfile) # adds played file to playlist to avoid repetition
