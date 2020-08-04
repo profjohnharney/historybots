@@ -67,6 +67,6 @@ while True: # sets this code on a loop
                 print("History Bot has been activated!")
             else:
                 print("History Bot has been activated " + str(i_count) + " times!")
-	    print(playList)
-	    GPIO.output(button_led, True) # turns button led back on
-            time.sleep(0.2) # brief delay to keep the loop working
+	print(playList)
+	GPIO.output(button_led, True) # turns button led back on
+        time.sleep(0.2) # brief delay to keep the loop working
