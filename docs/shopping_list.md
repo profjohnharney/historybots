@@ -3,9 +3,11 @@
 You have many options when it comes to buying these components. 
 I recommend [Sparkfun](https://www.sparkfun.com) and [Adafruit](https://www.adafruit.com). Links below are to Adafruit listings.
 
+This list will allow you to build a functional history bot that will in person look like a lot of components connected together. The housing for the bot is completely up to you; if you have access to a 3D printer or laser cutter I strongly recommend using IBM's [TJBot design files](https://ibmtjbot.github.io/). I printed my first history bot on a [Monoprice Select Mini 3D Printer](https://www.monoprice.com/product?p_id=30386&gclid=Cj0KCQjwzYGGBhCTARIsAHdMTQzFxPv2uuS9oYk7hoBYkApAEdQ5FTqwsbcXsbYd7hSJDs1X64qxW7EaAu5LEALw_wcB). The TJBot does not need an expensive printer with a large build area.
+
 There are a couple of wrinkles in this list. 
 If you do not care about having an LED turning on to indicate the History Bot is speaking, you can skip the LED and resistor. 
-With connectors, leds and resistors you will find you are ordering more than you "need" for this specific project.
+With connectors, leds and resistors you will find you are ordering more than you "need" for this specific project. The quick connect wires, for example, are specifically for the arcade button, and you can probably get by with alligator clips.
 But you will always want plenty of those things and spares are extremely useful. 
 It may also prove to be the basis of a little Dig Hum hardware lab!
 
@@ -15,6 +17,9 @@ You might want to consider investing in a soldering iron setup - and investing t
 Finally, although you do not need tools for this project, you should give some thought to what a simple tool set would look like.
 You cannot go wrong with a pair of needle-nosed pliers and some electrical tape. 
 Check out [this kit on Sparkfun](https://www.sparkfun.com/products/14681) for more ideas. 
+
+Please note that prices and availability of supplies may fluctuate.
+I have included prices here to be as transparent as I can about what you need to get this project up and running. If you want to start with a "no hardware" option such as the Caesar Bot, you just need the first three or four items on this list.
 
 ## List with prices
 
