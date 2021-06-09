@@ -8,7 +8,7 @@ The History Bot provided here will play an audio file in response to a button pr
 
 This project is offered as a suggestion to fellow educators who are interested in bringing a project like this into student-focused coursework.
 I work as an historian looking to bring technological skills and interactions with technology into the classroom. 
-More information on the History Bot 1.0, including a recap of my own experiences teaching a class using this project, can be found on [my website](http://www.profjohnharney.com).
+More information on the History Bot 1.0, including a recap of my own experiences teaching a class using this project, can be found on [my website](http://www.profjohnharney.com). You can also go [here](https://ctl.centre.edu/2020/04/29/inspirations-faculty-profile-john-harney/) see a great video made by Todd Sheene at the Centre College [Center for Teaching and Learning](https://ctl.centre.edu/).
 
 I have endeavoured to be clear in laying out the basic steps involved in creating a History Bot, but independent research is often inevitable.
 If you succeed in creating this History Bot you will learn plenty along the way, and will have the tools to start making your own projects if you choose.
@@ -39,3 +39,21 @@ If you have never done anything like this before, be prepared for what seem like
 However, the feeling you get when you solve a problem, or learn a new skill?
 I have rarely had so much fun doing my job.
 And I love my job.
+
+### Acknowledgements
+
+This project exists thanks to fantastic help from a number of friends and colleagues, as well as the students who took my course "History Bots" in January 2020. Big thank yous to:  
+  
+James Easton   
+Buck Graham   
+Jared Foos  
+Kaden Gervacio  
+Austin Mitchell  
+Roby Mullins  
+Fred O'Bryan  
+Alex Schneider  
+Isaiah Scott   
+Todd Sheene   
+Tyler Tucker  
+Candace Wentz  
+Josh West  
