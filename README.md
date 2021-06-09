@@ -4,6 +4,8 @@
 A History Bot is a device that responds to user interaction with a visual, mechanical or aural response based on a historical setting, figure or concept.
 The History Bot 1.0 is built using a Raspberry Pi 3B+.
 
+The History Bot provided here will play an audio file in response to a button press. This repository also includes an example History Bot that will read out a text file, and another that reads out a text file on a Raspberry Pi with an attached speaker and no additional hardware.
+
 This project is offered as a suggestion to fellow educators who are interested in bringing a project like this into student-focused coursework.
 I work as an historian looking to bring technological skills and interactions with technology into the classroom. 
 More information on the History Bot 1.0, including a recap of my own experiences teaching a class using this project, can be found on [my website](http://www.profjohnharney.com).
