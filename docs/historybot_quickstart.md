@@ -13,7 +13,7 @@ Lots of people on the Internet will complain at my liberal use of `sudo` here. I
 
 With the system updated, you will want to install the historybot software locally on your machine. 
 
-`git clone http://github.com/profjohnharney/historybots`  
+`git clone https://github.com/profjohnharney/historybots`  
 
 This will install a directory named "historybots" in your home directory. You can get there by typing the following:  
 
@@ -21,7 +21,7 @@ This will install a directory named "historybots" in your home directory. You ca
 
 From there you can type the `ls` command to see a list of files and directories. You activate history bots from the command line using the `python` command. If you wanted to test the Muhammad Ali history bot for example, you would type the following commands:
 
-`cd ali_bot`
+`cd ali_bot`  
 `python ali_bot.py`
 
 You can use `Ctrl+C` to cancel the history bot program when you are done.
