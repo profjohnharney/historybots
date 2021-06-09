@@ -54,6 +54,7 @@ Fred O'Bryan
 Alex Schneider  
 Isaiah Scott   
 Todd Sheene   
+Dave Toth   
 Tyler Tucker  
 Candace Wentz  
 Josh West  
