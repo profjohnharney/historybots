@@ -1,0 +1,1 @@
+This folder contains PDF versions of the historybot documentation. These should be useful if you want to print out the instructions.
