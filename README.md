@@ -1,5 +1,5 @@
 # History Bot 1.0
-<img align="right" src="fdrbot.png">
+<img align="center" src="fdrbot.png">
 
 A History Bot is a device that responds to user interaction with a visual, mechanical or aural response based on a historical setting, figure or concept.
 The History Bot 1.0 is built using a Raspberry Pi 3B+.
