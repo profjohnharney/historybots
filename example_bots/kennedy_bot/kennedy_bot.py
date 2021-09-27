@@ -5,6 +5,8 @@
 # and
 # Soren at https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/
 
+# No longer using led with move to new wooden carcass - 09.27.21
+
 import RPi.GPIO as GPIO
 import time # for sleep function below
 import os # for commands via console
@@ -13,11 +15,11 @@ import random
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) # Avoids warning channel is already in use
 
-led = 21
+# led = 21
 button = 18
 button_led = 26
 
-GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
+# GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) # sets up pin 18 as a button
 GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
 
@@ -42,9 +44,9 @@ while True: # sets this code on a loop
         if input_state == False: # False == button press
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
-            GPIO.output(led,True) #Turn on LED
+            # GPIO.output(led,True) #Turn on LED
             os.system(random.choice(l_audiofiles)) # takes random file from list and plays through command line
-            GPIO.output(led,False) #turn off LED
+            # GPIO.output(led,False) #turn off LED
             if i_count == 1:
                 print("History Bot has been activated!")
             else:
