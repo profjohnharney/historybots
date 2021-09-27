@@ -16,8 +16,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) # Avoids warning channel is already in use
 
 # led = 21
-button = 18
-button_led = 26
+button = 26
+button_led = 18
 
 # GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) # sets up pin 18 as a button
