@@ -13,7 +13,7 @@ import random
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) # Avoids warning channel is already in use
 
-# led = 21
+# # led = 21
 button = 26
 button_led = 18
 
@@ -30,7 +30,7 @@ l_audiofiles = []
 
 for file in l_dirlist:
     if file[-4:] == ".mp3" or file[-4:] == ".wav":
-        l_audiofiles.append("omxplayer -o alsa "  + file)
+        l_audiofiles.append("mpg321 "  + file)
 
 i_count = 0 # this counter is used so notification uses correct grammar
 
@@ -42,9 +42,9 @@ while True: # sets this code on a loop
         if input_state == False: # False == button press
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
-            # GPIO.output(led,True) #Turn on LED
+            # # GPIO.output(led,True) #Turn on LED
             os.system(random.choice(l_audiofiles)) # takes random file from list and plays through command line
-            # GPIO.output(led,False) #turn off LED
+            # # GPIO.output(led,False) #turn off LED
             if i_count == 1:
                 print("History Bot has been activated!")
             else:

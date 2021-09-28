@@ -19,7 +19,7 @@ import random
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False) # Avoids warning channel is already in use
 
-led = 21
+# led = 21
 button = 18
 button_led = 26
 
@@ -50,9 +50,9 @@ while True: # sets this code on a loop
         if input_state == False: # False == button press
             i_count = i_count + 1
             GPIO.output(button_led, False) # turns off button led
-            GPIO.output(led,True) #Turn on LED
+            # GPIO.output(led,True) #Turn on LED
             os.system(random.choice(l_textfiles)) # takes random file from list and plays through command line
-            GPIO.output(led,False) #turn off LED
+            # GPIO.output(led,False) #turn off LED
             if i_count == 1:
                 print("History Bot has been activated!")
             else:
