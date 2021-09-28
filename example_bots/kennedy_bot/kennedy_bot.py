@@ -32,7 +32,7 @@ l_audiofiles = []
 
 for file in l_dirlist:
     if file[-4:] == ".mp3" or file[-4:] == ".wav":
-        l_audiofiles.append("mpg321 "  + file)
+        l_audiofiles.append("mpg321 -q "  + file)
 
 i_count = 0 # this counter is used so notification uses correct grammar
 
