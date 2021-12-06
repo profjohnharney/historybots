@@ -1,0 +1,51 @@
+# John Harney, Centre College, updated 06.12.21
+
+# Good luck on finals!
+
+import RPi.GPIO as GPIO
+import time # for sleep function below
+import os # for commands via console
+import random
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False) # Avoids warning channel is already in use
+
+# led = 21
+button = 26
+button_led = 18
+
+# GPIO.setup(led,GPIO.OUT) # sets up pin 21 as led
+GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP) # sets up pin 18 as a button
+GPIO.setup(button_led,GPIO.OUT) # sets up pin 26 to output
+
+# path = "./" # this is being added so that the script works in Python 2.7
+# l_dirlist = os.listdir(path) # Python 2.7 requires an argument; optional in Python 3
+# l_audiofiles = []
+
+# code takes all mp3 and wav files in the SAME directory as the script
+# and queues them up for the random function below
+
+# for file in l_dirlist:
+#     if file[-4:] == ".mp3" or file[-4:] == ".wav":
+#         l_audiofiles.append("mpg321 -q "  + file)
+
+i_count = 0 # this counter is used so notification uses correct grammar
+s_greeting = "espeak -g 1 'Good Luck with your final exams!'"
+# following code is where the magic happens
+
+while True: # sets this code on a loop
+        GPIO.output(button_led, True) # turn on button led
+        input_state = GPIO.input(button) # primes the button!
+        if input_state == False: # False == button press
+            i_count = i_count + 1
+            GPIO.output(button_led, False) # turns off button led
+            # GPIO.output(led,True) #Turn on LED
+            os.system(s_greeting)
+            # GPIO.output(led,False) #turn off LED
+            if i_count == 1:
+                print("History Bot has been activated!")
+            else:
+                print("History Bot has been activated " + str(i_count) + " times!")
+            GPIO.output(button_led, True) # turns button led back on
+            time.sleep(0.2) # brief delay to keep the loop working
+
